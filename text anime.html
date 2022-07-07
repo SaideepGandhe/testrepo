@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Anime text</title>
+</head>
+<style>
+.wrapper{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.wrapper p{
+margin:0;
+//font-size:150px;
+color:rgba(225,225,225,0.01);
+//background-image:url("061.jpg");
+background-repeat:no-repeat;
+-webkit-background-clip:text;
+animation:animate 5s ease-in-out infinite;
+text-align:center;
+text-transform:uppercase;
+font-weight:900;
+}
+
+@keyframes animate{
+0%,
+100%{
+background-position:left top;
+//background-color:green;
+background-image: linear-gradient(90deg, red, transparent);
+font-size: 150px;
+font-weight: 900;
+}
+25%{
+background-position:right bottom;
+//background-color:red;
+background-image: linear-gradient(120deg, red, transparent);
+font-size: 120px;
+font-weight: 800;
+}
+50%{
+background-position:left bottom;
+//background-color:yellow;
+background-image: linear-gradient(120deg, red, transparent);
+font-size: 150px;
+font-weight: 700;
+}
+75%{
+background-position:right top;
+//background-color:blue;
+background-image: linear-gradient(90deg, red, transparent);
+font-size: 120px;
+font-weight: 600;
+}
+}
+
+
+</style>
+<body>
+<div class="wrapper">
+<p>  ♥ </p>
+<p>  ♥ </p>
+<p>  ♥ </p>
+<p>  ♥ </p>
+</div>
+</body>
+</html>
